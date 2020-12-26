@@ -1,3 +1,5 @@
+import { INCREAMENT_SIZE } from "../actions/types";
+
 const initialState = {
     size: 0,
 }
@@ -5,7 +7,7 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) => {
     switch(action.type){
-        case 'INCREAMENT_SIZE':
+        case INCREAMENT_SIZE:
             return {
                 ...state,
                 size: action.data
